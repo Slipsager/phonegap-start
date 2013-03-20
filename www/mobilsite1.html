@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">	
+<title>Multi Page Example (2)</title> 
+<link rel="stylesheet" href="http://code.jquery.com/mobile/latest/jquery.mobile.min.css" />
+<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/latest/jquery.mobile.min.js"></script>
+</head>
+
+<body>
+
+<div data-role="page" id="homePage">
+
+	<div data-role="header">Velkommen til mit mobilesite</div>
+
+	<div data-role="content">
+	<p>
+	Dette er et site som er site som er beregnet til mobiltelefonen.</p>
+	
+	<p>Tryk på dette link for at komme til <strong>ekstern side</strong> <a href="products.html" data-prefetch>products</a>.
+	</p> 
+	
+	<p>
+		Tryk dette link for at komme til en <strong>intern side</strong> hvor du kan ...<a href="#aboutPage" data-transition="flip">learn more</a> about Megacorp.
+	</p>
+	</div>
+	
+	<div data-role="footer">
+	<i>Copyright BJSL &copy; 2012</i>
+	</div>
+	
+</div>
+
+<div data-role="page" id="aboutPage" data-title="About Megacorp">
+
+	<div data-role="header">About MMDmobile</div>
+
+	<div data-role="content">
+	<p>
+	This text talks about Megacorp and how interesting it is. Most likely though you want to
+	<a href="#homePage">return</a> to the home page.
+	</p>
+	</div>
+	
+	<div data-role="footer">
+	<i>Copyright BJSL &copy; 2012</i>
+	</div>
+	
+</div>
+</body>
+</html>
